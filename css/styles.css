@@ -25,6 +25,12 @@ body:after {
   border-radius: 0 0 0 80px;
 }
 
+@media (max-width: 768px) {
+  body:after {
+    height: 50%;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,13 +239,13 @@ main #text .bottom h4 {
 
 @media (max-width: 768px) {
   main #text .bottom h4 {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 768px) {
   main #text {
-    margin-top: 200px;
+    margin-top: 230px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
