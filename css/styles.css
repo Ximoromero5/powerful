@@ -26,7 +26,6 @@ body:after {
 }
 
 header {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,6 +37,12 @@ header {
           align-items: center;
   padding: 60px 5px;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 40px 5px;
+  }
 }
 
 header nav ul {
@@ -80,6 +85,18 @@ header nav ul li .dot {
 
 header nav ul li:last-child a {
   color: #a0a1ac;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    margin: 0 30px;
+  }
 }
 
 main {
@@ -134,7 +151,7 @@ main #text .top h4 {
 
 @media (max-width: 768px) {
   main #text .top h4 {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
@@ -150,6 +167,7 @@ main #text h1 {
 @media (max-width: 768px) {
   main #text h1 {
     font-size: 40px;
+    max-width: 100%;
   }
 }
 
@@ -163,6 +181,7 @@ main #text p {
 @media (max-width: 768px) {
   main #text p {
     max-width: 65%;
+    margin-top: 15px;
   }
 }
 
@@ -198,8 +217,8 @@ main #text .bottom button:hover {
 
 @media (max-width: 768px) {
   main #text .bottom button {
-    font-size: 16px;
-    padding: 8px 28px;
+    font-size: 14px;
+    width: 180px;
   }
 }
 
@@ -213,8 +232,14 @@ main #text .bottom h4 {
 }
 
 @media (max-width: 768px) {
+  main #text .bottom h4 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
   main #text {
-    margin-top: 150px;
+    margin-top: 200px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
